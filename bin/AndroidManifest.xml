@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.antoinesaliba.inspirator"
+    android:versionCode="4"
+    android:versionName="2.2">    
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    
+    <supports-screens 
+        android:anyDensity="true"
+        android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true"
+    	android:xlargeScreens="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.inspirator.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"> <!--this makes it so the same activity does not open more then once, example when click on notification in notification center and app is already running-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+			android:name="com.example.inspirator.TwitterTime"
+			android:parentActivityName="com.example.inspirator.MainActivity" >
+		</activity>
+		<activity
+			android:name="com.example.inspirator.TwitterWebView"
+			android:label="twitterwebview" />
+       <receiver android:name="com.example.inspirator.AlarmManagerBroadcastReceiver" />
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+                  android:windowSoftInputMode="adjustResize"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+    <meta-data android:name="com.google.android.gms.version"
+               android:value="@integer/google_play_services_version" />
+    </application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>

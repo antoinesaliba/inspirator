@@ -1,0 +1,113 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+    	xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+        android:background="#6CB5FF">
+    
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.inspirator.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/inspirator_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="@string/inspirator_title"
+        android:textColor="#FFFFFF"
+        android:textSize="85sp" />
+    
+    <Switch
+        android:id="@+id/on_off_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number_notifiacations"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="@string/on_off_switch"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+    
+      <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/about_text"
+        android:layout_below="@+id/above_message"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:gravity="center"
+        android:text="@string/inspirator_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp" />
+    
+    <TextView
+        android:id="@+id/about_text"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inspirator_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="@string/about_text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/above_message"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/above_message"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+    
+    <EditText
+        android:id="@+id/number_notifiacations"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/per_day_notifications"
+        android:layout_centerHorizontal="true"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:hint="@string/per_day_notifications_hint"
+        android:inputType="number"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/per_day_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/on_off_switch"
+        android:layout_below="@+id/above_message"
+        android:layout_marginTop="275dp"
+        android:text="@string/per_day_notifications"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/on_off_switch"
+        android:layout_marginTop="19dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7009081790458711/4324243781" >
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
+</ScrollView>

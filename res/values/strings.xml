@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Inspirator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="inspirator_title">Inspirator</string>
+    <string name="twitter_feed">Inspirator Feed</string>
+    <string name="on_off_switch">Inspirator Random Notifications</string>
+    <string name="twitter_info">Be inspired by the accomplishments of others and tweet us at @inspirator4you to show what you have accomplished and inspire others</string>
+    <string name="per_day_notifications_hint">Number between 1&#8211;24 </string>
+    <string name="per_day_notifications">Enter number of hours between notifications:</string>
+    <string name="about_text">Motiviation is your biggest weapon and with a little inspiration you have the potential to do things no app can do!</string>
+	<string name="above_message">The message below will change to always keep you motivated:</string>
+</resources>
